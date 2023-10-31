@@ -523,6 +523,7 @@ main{
 }
 
 .backdrop{
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
@@ -555,6 +556,7 @@ main{
     right: 24px;
     width: 24px;
     height: 24px;
+    padding: 0;
     align-self: flex-end;
     display: flex;
     justify-content: center;
@@ -637,7 +639,7 @@ main{
     border-color: var(--iris);
 }
 
-.modal-input:focus .modal-input-icon{
+.modal-input:focus-within + .modal-input-icon{
     fill: var(--iris);
 }
 
@@ -683,7 +685,7 @@ main{
     color: var(--light-slate);
 }
 
-.modal-check:checked{
+.modal-check:checked .agree-text{
     background-color: var(--ocean);
     border: none;
     fill: var(--cloud);
