@@ -432,7 +432,7 @@ main{
     max-width: 264px;
 }
 
-.socmed-cont{
+.basement-socmed{
     margin-right: 80px;
 }
 
@@ -462,7 +462,7 @@ main{
     background-color: var(--green);
 }
 
-.basement-sub{
+.basement-sub-form{
     display: flex;
     align-items: flex-end;
     gap: 24px;
@@ -474,14 +474,14 @@ main{
 }
 
 .basement-input{
-    background-color: var(--navy-blue);
+    background-color: transparent;
     color: var(--white);
     width: 264px;
     height: 40px;
     padding: 8px 16px;
     border-radius: 4px;
     border: 1px solid var(--white);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .basement-input::placeholder{
@@ -490,17 +490,21 @@ main{
 }
 
 .but-sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--iris);
     color: var(--white);
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
     border-radius: 4px;
     border: none;
     padding: 8px 24px;
     height: 40px;
+    min-width: 165px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
 
 .but-sub:hover, .but-sub:focus{
@@ -509,6 +513,7 @@ main{
 
 .but-sub-icon{
     fill: var(--white);
+    margin-left: 16px;
 }
 
 .backdrop{

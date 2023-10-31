@@ -414,7 +414,7 @@
                         Increase the flow of customers and sales for your business with digital marketing & growth solutions.
                     </p>
                 </div>
-                <div class="socmed-cont">
+                <div class="basement-socmed">
                     <p class="basement-heading"> Social media</p>
                     <ul class="footer-socials-list list">
                         <li class="team-socials-item">
@@ -447,25 +447,27 @@
                         </li>
                     </ul>
                 </div>
-                <form class="basement-sub">
-                    <label class="basement-label">
-                        <span class="basement-heading">Subscribe</span>
+                <div class="basement-sub">
+                    <p class="basement-heading">Subscribe</p>
+                    <form class="basement-sub-form">
+                        <label for="basement-email"></label>
                         <input 
                             type="email" 
-                            name="e-mail" 
+                            name="basement-email"
                             placeholder="E-mail"
                             class="basement-input"
                         />
-                    </label>
-                    <button type="button" class="but-sub">
-                        Subscribe
-                        <svg class="but-sub-icon" width="24" height="24">
-                            <use href="./images/icons.svg#icon-paper-airplane"></use>
-                        </svg>
-                    </button>
-                </form>
+                        <button type="submit" class="but-sub">
+                            Subscribe
+                            <svg class="but-sub-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-paper-airplane"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
             </div>
         </footer>
+        <!--
         <div class="backdrop">
             <div class="modal">
                 <button type="button" class="close-btn">
@@ -481,7 +483,8 @@
                         <label for="user-name" class="modal-label">Name</label>
                         <div class="input-wrap">
                             <input 
-                                type="text" 
+                                type="text"
+                                id="user-name"
                                 name="user-name"
                                 class="modal-input"
                             />
@@ -494,7 +497,8 @@
                         <label for="user-phone" class="modal-label">Phone</label>
                         <div class="input-wrap">
                             <input
-                                type="tel" 
+                                type="tel"
+                                id="user-phone"
                                 name="user-phone"
                                 class="modal-input"
                             />
@@ -507,7 +511,8 @@
                         <label for="user-email" class="modal-label">Email</label>
                         <div class="input-wrap">
                             <input 
-                                type="email" 
+                                type="email"
+                                id="user-email"
                                 name="user-email"
                                 class="modal-input"
                             />
@@ -529,11 +534,11 @@
                     <div class="modal-field">
                         <label for="modal-check" class="modal-label">
                             <input 
-                                type="checkbox" 
+                                type="checkbox"
+                                id="modal-check"
                                 name="agreement"
                                 class="modal-check"
                             />
-                            <label for="modal-check" class="modal-label"></label>
                             I accept the terms and conditions of the 
                             <span class="agree-text">
                                 Privacy Policy
@@ -547,5 +552,6 @@
                 </form>
             </div>
         </div>
+        -->
     </body>
 </html>
