@@ -524,21 +524,19 @@ main{
 
 .backdrop{
     position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 408px;
+    height: 584px;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
                 visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    width: 408px;
-    height: 584px;
+    height: 100%;
+    width: 100%;
     min-height: 584px;
     border-radius: 4px;
     background: var(--dairy);
@@ -685,7 +683,7 @@ main{
     color: var(--light-slate);
 }
 
-.modal-check:checked .agree-text{
+.modal-check:checked + .modal-label > .agree-text{
     background-color: var(--ocean);
     border: none;
     fill: var(--cloud);
